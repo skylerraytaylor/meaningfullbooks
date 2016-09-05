@@ -1,0 +1,41 @@
+// grid
+
+$mobile: 700px;
+$tablet: 768px;
+$desktops: 992px;
+$cinema-display: 1200px;
+
+$horizontal-padding: 8px;
+$vertical-padding: 16px;
+$row-width: 90%;
+$max-row-width: 1200px;
+
+.row {
+  margin: 0 auto;
+  width: $row-width;
+  max-width: $max-row-width;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: $vertical-padding;
+  margin-bottom: 2*$vertical-padding;
+  @media only screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
+}
+
+.column {
+  flex: 1;
+  padding-left: $horizontal-padding;
+  padding-right: $horizontal-padding;
+  @media only screen and (max-width: $mobile) {
+    padding: $vertical-padding 0;
+  }
+  
+}
+
+// responsive images
+
+img {
+  width: 100%;
+  height: auto;
+}
