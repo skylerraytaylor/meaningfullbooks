@@ -1,0 +1,25 @@
+// color variables
+$paprika: #e94e4f; 
+$dusk: #343b47;
+$gold: #ccab5a;
+$dusk-transparent: rgba(40, 45, 53, .8);
+$nav-background: rgba(40, 45, 53, .9);
+$white-transparent: rgba(255, 255, 255, .85);
+$bone-transparent: rgba(153, 165, 170, .85);
+
+// set main brand color
+$brand: $paprika;
+
+// Variables
+$transition-duration: 0.4s;
+$transition-type: ease;
+
+// Media Queries
+$mobile: 700px;
+$tablet: 768px;
+$desktops: 992px;
+$cinema-display: 1200px;
+
+// padding
+$horizontal-padding: 8px;
+$vertical-padding: 16px;

@@ -1,35 +1,67 @@
 header {
   margin-top: $vertical-padding;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
   ul {
   list-style: none;
     margin: 0;
     padding: 0;
-}
+  }
 }
 
-  h1.logo {
+.logo {
+  h1 {
     text-indent: -9999px;
     background-image: url(../img/mb-logo.svg);
     background-size: auto 100%;
     background-repeat: no-repeat;
-    font-size: 25px;
+    font-size: 34px;
     min-width: 215px;
-    margin: 2*$horizontal-padding;
+    margin: $horizontal-padding 2*$horizontal-padding;
   }
+}
 
 nav ul {
   display: flex;
-  background: darken($dusk, 10%);
+  background: $nav-background;
   margin: 0 auto;
   width: $row-width;
   max-width: $max-row-width;
-  li.nav-item {
+  height: 60px;
+  overflow: hidden;
+  .nav-item {
     flex: 1;
-    > a {
-      text-align: center;
-      width: 100%;
-      background-color: red;
+    text-align: center;
+    transition: all $transition-duration ease;
+    > a.nav-link {
+      display: block;
+      font-family: $font-family-headline;
+      text-transform: uppercase;
+      font-size: 80%;
+      padding-top: $vertical-padding*1.5;
+      padding-bottom: $vertical-padding*1.5;
+      color: white;
+      letter-spacing: 2px;
+      &:hover {
+        background-color: darken($dusk, 10%);
+      }
       
+    }
+    &.logo {
+      flex-grow: 3;
+    }
+    &.highlight {
+      background-color: $paprika;
+      &:hover {
+          flex: 1.15;
+        }
+      a {
+        background-color: $paprika;
+        &:hover {
+          background-color: $gold;
+        }
+      } 
     }
   }
 }

@@ -1,0 +1,73 @@
+// Import main fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,900,900i);
+@import url(https://fonts.googleapis.com/css?family=Hind+Guntur:700);
+
+
+// Define variables with fonts
+$font-family-base: 'Lato', sans-serif;
+$light: 300;
+$reg: 400;
+$bold: 900;
+$font-family-headline: 'Hind Guntur', sans-serif;
+
+body {
+  font-family: $font-family-base;
+  font-weight: $reg;
+  font-size:16px;
+  color: white;
+  background-color: $dusk;
+}
+
+.inverse-text-color {
+  color: $dusk;
+}
+
+h1 {
+  font-family: $font-family-headline;
+  text-transform: uppercase;
+  font-size: 4em;
+  line-height: 1;
+  @media only screen and (max-width: $tablet) {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  font-family: $font-family-base;
+  font-weight: $light;
+  font-size: 2em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  transition: all $transition-duration ease;
+  color: $paprika;
+  text-decoration: none;
+  &:hover {
+    color: darken($paprika, 10%);
+  }
+}
+
+.centered {
+  text-align: center;
+}
+
+.button {
+  background-color: $paprika;
+  color: white;
+  padding: $vertical-padding $horizontal-padding;
+  display: inline-block;
+  width: 160px;
+  text-align: center;
+  margin-right: $horizontal-padding*2;
+  margin-top: $vertical-padding;
+  &:hover {
+    background-color: $gold;
+    color: white;
+  }
+  
+  
+}
