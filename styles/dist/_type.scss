@@ -12,10 +12,13 @@ $font-family-headline: 'Hind Guntur', sans-serif;
 
 body {
   font-family: $font-family-base;
-  font-weight: $reg;
+  font-weight: $light;
   font-size:16px;
   color: white;
   background-color: $dusk;
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 .inverse-text-color {
@@ -27,7 +30,7 @@ h1 {
   text-transform: uppercase;
   font-size: 4em;
   line-height: 1;
-  @media only screen and (max-width: $tablet) {
+  @media only screen and (max-width: $mobile) {
     font-size: 2em;
   }
 }
@@ -36,6 +39,7 @@ h2 {
   font-family: $font-family-base;
   font-weight: $light;
   font-size: 2em;
+  line-height: 1;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -55,19 +59,50 @@ a {
   text-align: center;
 }
 
+.inline {
+  display: inline;
+}
+
+.left-aligned {
+  text-align: left;
+}
+
+.right-aligned {
+  text-align: right;
+}
+
+
 .button {
   background-color: $paprika;
+  font-family: $font-family-headline;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   color: white;
   padding: $vertical-padding $horizontal-padding;
   display: inline-block;
-  width: 160px;
+  width: 43%;
+  max-width: 200px;
   text-align: center;
-  margin-right: $horizontal-padding*2;
+  margin-right: $horizontal-padding;
   margin-top: $vertical-padding;
+  @media only screen and (max-width: $mobile) {
+    display: block;
+    width: 80%;
+    max-width: 80%;
+    margin:  $vertical-padding auto;
+  }
   &:hover {
     background-color: $gold;
     color: white;
   }
   
-  
+}
+
+.quote-block {
+  text-align: center;
+  padding: $vertical-padding*2 $horizontal-padding*6;
+  border: 1px solid $white-transparent;
+  .small {
+    font-size: 1.5em;
+  }
 }

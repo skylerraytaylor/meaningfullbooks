@@ -29,11 +29,15 @@
   background-size: cover; 
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: 50% 0;
+  @media only screen and (max-width: $tablet) {
+    background-attachment: scroll;
+  }
   .section-color {
-    padding-top: $horizontal-padding*30;
-    padding-bottom: $horizontal-padding*8;
+    padding-top: $vertical-padding*18;
+    padding-bottom: $vertical-padding*3;
     @media only screen and (max-width: $mobile) {
-     padding-top: $horizontal-padding*20;
+     padding-top: $vertical-padding*8;
     }
     background: -moz-linear-gradient(left, rgba(40,45,53,0.9) 0%, rgba(40,45,53,0.89) 1%, rgba(40,45,53,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(40,45,53,0.9) 0%,rgba(40,45,53,0.89) 1%,rgba(40,45,53,0) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -47,29 +51,27 @@
 #how-it-works {
   background-image: url(../img/bg-993.jpg);
   background-size: cover; 
-  text-align: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: 50% 0;
   @media only screen and (max-width: $tablet) {
-    background-size: 100%;
+    background-attachment: scroll;
   }
   .section-color {
     background-color: $white-transparent;
-    padding-top: $horizontal-padding*14;
-    padding-bottom: $horizontal-padding*8;
+    padding-top: $vertical-padding*6;
+    padding-bottom: $vertical-padding*3;
   }
   p {
     max-width: 70%;
     display: block;
     margin: 0 auto;
   }
-  .column img.how-images {
+  .how-images {
     width: 60%;
     height: auto;
-    display: block;
-    margin: 0 auto;
     @media only screen and (max-width: $mobile) {
-     width: 30%;
+     width: 35%;
     }
   }
   .row {
@@ -81,16 +83,16 @@
 #video {
   background-image: url(../img/bg-642.jpg);
   background-size: cover; 
-  text-align: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: 50% 0;
   @media only screen and (max-width: $tablet) {
-    background-size: 100%;
+    background-attachment: scroll;
   }
   .section-color {
     background-color: $bone-transparent;
-    padding-top: $horizontal-padding*14;
-    padding-bottom: $horizontal-padding*8;
+    padding-top: $vertical-padding*6;
+    padding-bottom: $vertical-padding*3;
   }
 }
 
@@ -98,19 +100,56 @@
 #buy {
   background-image: url(../img/bg-books.jpg);
   background-size: cover; 
-  text-align: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: 0 0;
   @media only screen and (max-width: $tablet) {
-    background-size: 100%;
+    background-attachment: scroll;
   }
   .section-color {
-    padding-top: $horizontal-padding*14;
-    padding-bottom: $horizontal-padding*8;
+    padding-top: $vertical-padding*6;
+    padding-bottom: $vertical-padding*3;
     background: -moz-linear-gradient(left, rgba(40,45,53,0) 0%, rgba(40,45,53,0.9) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(40,45,53,0) 0%,rgba(40,45,53,.9) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, rgba(40,45,53,0) 0%, rgba(40,45,53,.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6282d35', endColorstr='#00282d35',GradientType=1 ); /* IE6-9 */
+  }
+  .row {
+    width: $row-width*.75;
+    max-width: $max-row-width*.75;
+    @media only screen and (max-width: $tablet) {
+      width: $row-width;
+    max-width: $max-row-width;
+    }
+  }
+}
+
+.details-header {
+  background: $paprika;
+  padding: $vertical-padding*1.5 $horizontal-padding*4 $vertical-padding;
+  text-align: center;
+  font-family: $font-family-headline;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.details-box {
+  border: 2px solid $paprika;
+  padding: $vertical-padding $horizontal-padding*4 $vertical-padding*2 $horizontal-padding*4;
+  background-color: $dusk-transparent;
+  text-align: left;
+  .button {
+    width: calc(100% - #{$horizontal-padding*2});
+    max-width: calc(100% - #{$horizontal-padding*2});
+  }
+  .price {
+    text-align: center;
+  }
+  ul {
+    padding-bottom: $vertical-padding;
+    border-bottom: 1px solid $bone-transparent;
+  }
+  li {
+    padding-bottom: $vertical-padding/2;
   }
 }
 
@@ -119,5 +158,14 @@
 
 #guarantee {
   background-color: $paprika;
-  height: 80px;
+  padding-top: $vertical-padding*4;
+  padding-bottom: $vertical-padding*1;
+  .row {
+    width: $row-width*.75;
+    max-width: $max-row-width*.75;
+  }
+  .guarantee {
+    width: 75%;
+    margin-top: $vertical-padding*-2;
+  }
 }

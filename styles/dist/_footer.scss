@@ -1,0 +1,25 @@
+// footer
+
+footer {
+  background-color: $dusk;
+  .logo {
+    h1 {
+      text-indent: -9999px;
+      background-image: url(../img/mb-logo.svg);
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      font-size: 34px;
+      min-width: 215px;
+      margin: $vertical-padding 2*$horizontal-padding;
+    }
+  }
+  .contact {
+    @media only screen and (min-width: $mobile) {
+      text-align: right;
+    }
+  }
+  .description {
+    padding-left: $horizontal-padding;
+    padding-right: $horizontal-padding;
+  }
+}
