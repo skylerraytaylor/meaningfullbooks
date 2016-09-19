@@ -750,7 +750,8 @@ nav ul {
   max-width: 1200px;
   height: 60px;
   overflow: hidden;
-  transition: all 0.4s ease; }
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 900px) {
     nav ul {
       flex-direction: column; } }
@@ -934,14 +935,14 @@ nav ul {
 
 #guarantee {
   background-color: #e94e4f;
-  padding-top: 64px;
+  padding-top: 80px;
   padding-bottom: 16px; }
   #guarantee .row {
     width: 67.5%;
     max-width: 900px; }
   #guarantee .guarantee {
     width: 75%;
-    margin-top: -32px; }
+    margin-top: -48px; }
 
 footer {
   background-color: #343b47; }
@@ -953,9 +954,19 @@ footer {
     font-size: 34px;
     min-width: 215px;
     margin: 16px 16px; }
-  @media only screen and (min-width: 700px) {
+    @media only screen and (max-width: 900px) {
+      footer .logo h1 {
+        background-position: center; } }
+  @media only screen and (min-width: 900px) {
     footer .contact {
       text-align: right; } }
   footer .description {
     padding-left: 8px;
     padding-right: 8px; }
+  footer .social a {
+    display: inline-block;
+    text-align: center;
+    padding: 15px; }
+    footer .social a img {
+      width: 29px;
+      height: auto; }

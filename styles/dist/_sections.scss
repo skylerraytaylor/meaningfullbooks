@@ -165,7 +165,7 @@
 
 #guarantee {
   background-color: $paprika;
-  padding-top: $vertical-padding*4;
+  padding-top: $vertical-padding*5;
   padding-bottom: $vertical-padding*1;
   .row {
     width: $row-width*.75;
@@ -173,6 +173,6 @@
   }
   .guarantee {
     width: 75%;
-    margin-top: $vertical-padding*-2;
+    margin-top: $vertical-padding*-3;
   }
 }

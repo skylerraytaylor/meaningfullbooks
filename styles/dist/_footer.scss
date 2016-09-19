@@ -11,15 +11,29 @@ footer {
       font-size: 34px;
       min-width: 215px;
       margin: $vertical-padding 2*$horizontal-padding;
+      @media only screen and (max-width: $tablet) {
+      background-position: center;
+      }
     }
   }
   .contact {
-    @media only screen and (min-width: $mobile) {
+    @media only screen and (min-width: $tablet) {
       text-align: right;
     }
   }
   .description {
     padding-left: $horizontal-padding;
     padding-right: $horizontal-padding;
+  }
+  .social {
+    a {
+      display: inline-block;
+      text-align: center;
+      padding: 15px;
+      img {
+        width: 29px;
+        height: auto;
+      }
+    }
   }
 }
