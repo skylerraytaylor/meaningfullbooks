@@ -18,11 +18,23 @@ header {
     background-repeat: no-repeat;
     font-size: 34px;
     min-width: 215px;
-    margin: $horizontal-padding 2*$horizontal-padding;
+    margin: 13px 2*$horizontal-padding;
   }
 }
 
+.menu {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  img {
+    height: 20px;
+    width: auto;
+  }
+}
+
+
 nav ul {
+  position: relative;
   display: flex;
   background: $nav-background;
   margin: 0 auto;
@@ -30,6 +42,10 @@ nav ul {
   max-width: $max-row-width;
   height: 60px;
   overflow: hidden;
+  transition: all $transition-duration ease;
+  @media only screen and (max-width: $tablet) {
+    flex-direction: column;
+  }
   .nav-item {
     flex: 1;
     text-align: center;
@@ -64,4 +80,19 @@ nav ul {
       } 
     }
   }
+  &.mobile-nav-active {
+    @media only screen and (max-width: $tablet) {
+      height: 250px;
+      background: darken($nav-background, 5%);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+      a.nav-link {
+        padding-top: $vertical-padding*1;
+        padding-bottom: $vertical-padding*1;
+      }
+    }
+  }
+}
+
+.active {
+  background: darken($nav-background, 20%);
 }

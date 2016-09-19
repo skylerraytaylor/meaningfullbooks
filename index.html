@@ -14,11 +14,22 @@
         <link rel="stylesheet" href="styles/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/jquery-1.12.2.min.js"></script>
+        <script>
+        $(document).ready(function() {
+          $('#menu-button, a.nav-link').click(function() {
+            $("#menu-button").toggleClass('active');
+          });
+          $('#menu-button, a.nav-link').click( function() {
+            $("#menu").toggleClass("mobile-nav-active");
+          } );
+        });
+        </script>
     </head>
     <body>
       <header>
         <nav>
-          <ul>
+          <ul id="menu">
+            <a class="hide-on-desktop menu" id="menu-button"><img alt="Click for Menu" src="img/menu.svg"></a>
             <li class="nav-item logo"><a href="#hero"><h1>MeaningFull Books</h1></a></li>
             <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
             <li class="nav-item"><a class="nav-link" href="#video">Why?</a></li>

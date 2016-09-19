@@ -709,6 +709,10 @@ img {
   .hide-on-tablet {
     display: none; } }
 
+@media only screen and (min-width: 900px) {
+  .hide-on-desktop {
+    display: none; } }
+
 /* layout styles */
 header {
   margin-top: 16px;
@@ -727,16 +731,29 @@ header {
   background-repeat: no-repeat;
   font-size: 34px;
   min-width: 215px;
-  margin: 8px 16px; }
+  margin: 13px 16px; }
+
+.menu {
+  position: absolute;
+  right: 0;
+  padding: 20px; }
+  .menu img {
+    height: 20px;
+    width: auto; }
 
 nav ul {
+  position: relative;
   display: flex;
   background: rgba(40, 45, 53, 0.9);
   margin: 0 auto;
   width: 90%;
   max-width: 1200px;
   height: 60px;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: all 0.4s ease; }
+  @media only screen and (max-width: 900px) {
+    nav ul {
+      flex-direction: column; } }
   nav ul .nav-item {
     flex: 1;
     text-align: center;
@@ -762,6 +779,17 @@ nav ul {
         background-color: #e94e4f; }
         nav ul .nav-item.highlight a:hover {
           background-color: #ccab5a; }
+  @media only screen and (max-width: 900px) {
+    nav ul.mobile-nav-active {
+      height: 250px;
+      background: rgba(29, 33, 38, 0.9);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }
+      nav ul.mobile-nav-active a.nav-link {
+        padding-top: 16px;
+        padding-bottom: 16px; } }
+
+.active {
+  background: rgba(0, 0, 0, 0.9); }
 
 .arrow {
   padding-top: 16px;
@@ -781,6 +809,12 @@ nav ul {
   margin: 0 auto;
   width: 90%;
   text-align: center; }
+  .coming-soon .logo h1 {
+    text-align: center;
+    background-position: 50%;
+    font-size: 2em;
+    margin-top: 48px;
+    margin-bottom: 48px; }
 
 #hero {
   background-image: url(../img/bg-419.jpg);
