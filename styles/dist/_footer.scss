@@ -20,6 +20,9 @@ footer {
     @media only screen and (min-width: $tablet) {
       text-align: right;
     }
+    @media only screen and (max-width: $tablet) {
+      flex: 2;
+    }
   }
   .description {
     padding-left: $horizontal-padding;
@@ -29,7 +32,9 @@ footer {
     a {
       display: inline-block;
       text-align: center;
-      padding: 15px;
+      padding-top: $vertical-padding*1.5;
+      padding-left: $horizontal-padding/3;
+      padding-right: $horizontal-padding/3;
       img {
         width: 29px;
         height: auto;

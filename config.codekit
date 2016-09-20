@@ -55,6 +55,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/bg-books-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 311982,
+		"inputAbbreviatedPath": "\/img\/bg-books-2.jpg",
+		"outputAbbreviatedPath": "\/img\/bg-books-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/bg-books.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -73,6 +84,17 @@
 		"initialSize": 1.10141e+06,
 		"inputAbbreviatedPath": "\/img\/books.png",
 		"outputAbbreviatedPath": "\/img\/books.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/meaningful-books.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24691,
+		"inputAbbreviatedPath": "\/img\/meaningful-books.jpg",
+		"outputAbbreviatedPath": "\/img\/meaningful-books.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

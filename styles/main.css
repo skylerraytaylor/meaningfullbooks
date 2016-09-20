@@ -882,7 +882,7 @@ nav ul {
     padding-bottom: 48px; }
 
 #buy {
-  background-image: url(../img/bg-books.jpg);
+  background-image: url(../img/bg-books-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -960,13 +960,18 @@ footer {
   @media only screen and (min-width: 900px) {
     footer .contact {
       text-align: right; } }
+  @media only screen and (max-width: 900px) {
+    footer .contact {
+      flex: 2; } }
   footer .description {
     padding-left: 8px;
     padding-right: 8px; }
   footer .social a {
     display: inline-block;
     text-align: center;
-    padding: 15px; }
+    padding-top: 24px;
+    padding-left: 2.6666666667px;
+    padding-right: 2.6666666667px; }
     footer .social a img {
       width: 29px;
       height: auto; }
