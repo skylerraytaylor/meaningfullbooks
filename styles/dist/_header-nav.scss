@@ -84,12 +84,16 @@ nav ul {
   }
   &.mobile-nav-active {
     @media only screen and (max-width: $tablet) {
-      height: 250px;
+      height: 260px;
+      overflow: hidden;
       background: darken($nav-background, 5%);
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
       a.nav-link {
         padding-top: $vertical-padding*1;
         padding-bottom: $vertical-padding*1;
+        &.highlight {
+          padding-bottom: $vertical-padding*1.5;
+        }
       }
     }
   }

@@ -77,6 +77,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/book-isolated.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 250349,
+		"inputAbbreviatedPath": "\/img\/book-isolated.png",
+		"outputAbbreviatedPath": "\/img\/book-isolated.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/books.png": {
 		"fileType": 32768,
 		"ignore": 0,

@@ -112,6 +112,7 @@
   background-position: 0 0;
   @media only screen and (max-width: $tablet) {
     background-attachment: scroll;
+    background-position: right center;
   }
   .section-color {
     padding-top: $vertical-padding*6;

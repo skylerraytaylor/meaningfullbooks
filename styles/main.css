@@ -782,12 +782,15 @@ nav ul {
           background-color: #ccab5a; }
   @media only screen and (max-width: 900px) {
     nav ul.mobile-nav-active {
-      height: 250px;
+      height: 260px;
+      overflow: hidden;
       background: rgba(29, 33, 38, 0.9);
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }
       nav ul.mobile-nav-active a.nav-link {
         padding-top: 16px;
-        padding-bottom: 16px; } }
+        padding-bottom: 16px; }
+        nav ul.mobile-nav-active a.nav-link.highlight {
+          padding-bottom: 24px; } }
 
 .active {
   background: rgba(0, 0, 0, 0.9); }
@@ -889,7 +892,8 @@ nav ul {
   background-position: 0 0; }
   @media only screen and (max-width: 900px) {
     #buy {
-      background-attachment: scroll; } }
+      background-attachment: scroll;
+      background-position: right center; } }
   #buy .section-color {
     padding-top: 96px;
     padding-bottom: 48px;
